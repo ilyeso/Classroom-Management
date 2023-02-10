@@ -9,7 +9,6 @@ from datetime import datetime
 from lib.helper import user_data_path
 import ast
 index_page = Blueprint("index_page", __name__)
-# userfile="C:/Users/firos/Downloads/project/data/_demo_user.txt"
 model_user = User()
 
 @index_page.route("/",methods=['POST','GET'])
