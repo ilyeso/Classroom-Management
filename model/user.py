@@ -4,7 +4,7 @@ import json
 from lib.helper import course_data_path
 from lib.helper import user_data_path
 from lib.helper import course_json_files_path
-userfile="C:/Users/firos/Downloads/project/data/_demo_user.txt"
+userfile="./project/data/_demo_user.txt"
 class User:
     current_login_user = None
 
