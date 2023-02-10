@@ -96,11 +96,6 @@ class Course:
         pass
 
     def delete_course_by_id(self, temp_course_id):
-        # with open("C:/Users/firos/Downloads/project/data/course.txt", "r", encoding="utf8") as fi:
-        #     f = fi.readlines()
-        #     for h in f:
-        #         inst = h.strip().split(";;;")
-        #         if (inst[3] == temp_course_id):
         with open(course_data_path, "r") as infile:
             lines = infile.readlines()
 
@@ -120,8 +115,6 @@ class Course:
                 inst=h.strip().split(";;;")
 
                 if(inst[3]==temp_course_id):
-                    # print(inst[5])
-                    # print(inst[6])
                     a=Course(inst[0], int(inst[1]), inst[2],int(inst[3]),inst[4],inst[5],inst[6],inst[7],inst[8])
                     return a.toJSON()
 
